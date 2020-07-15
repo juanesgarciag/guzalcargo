@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #1d1d1d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px 10px;
+    margin: 0;
+}
+
+header nav .nav_logo{
+    height: 60px;
+    width: 80px;
+}
+
+header nav .nav_logo img{
+    height: 100%;
+    width: 100%;
+}
+
+header nav .nav_menu{
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav_menu ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav .nav_menu ul li{
+    padding: 0 10px;
+}
+
+header nav .nav_menu ul li a{
+    color: #1d1d1d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: 0.5s;
+}
+
+header nav .nav_menu ul li:hover a{
+    border-bottom: 2px solid #a0151b;
+}
+
+header nav .nav_menu .nav_menu-buttons a{
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+header nav .nav_menu .nav_menu-buttons a:nth-child(1){
+    border: 1px solid #1d1d1d;
+    padding: 5px 40px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+header nav .nav_menu .nav_menu-buttons a:nth-child(2){
+    border: 1px solid #a0151b;
+    color: #fff;
+    background: #a0151b;
+    padding: 5px 40px;
+    border-radius: 5px;
+}
+
+header .hero{
+    background: url(/assets/carga.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 40px;
+}
+
+header .hero .hero_content{
+    padding-left: 3rem;
+    padding-top: 5rem;
+}
+
+header .hero .hero_content h1{
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+header .hero .hero_content p{
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+header .hero .hero_content a{
+    border: 1px solid #a0151b;
+    color: #fff;
+    background: #a0151b;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
