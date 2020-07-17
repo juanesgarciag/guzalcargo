@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face{
+    font-family: 'helvetica-neue';
+    src: url('./fonts/helvetica-neue.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
 body{
     margin: 0;
     padding: 0;
     color: #1d1d1d;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'helvetica-neue', sans-serif;
 }
 
 header nav{
@@ -144,7 +151,7 @@ header .hero .hero_content a:hover{
     grid-template-rows: minmax(100px, auto);
     grid-template-areas: 'title title title'
                         'card-1 card-2 card-3';
-    grid-gap: 30px;
+    grid-gap: 15px;
 }
 
 .wrapper_cards-title{
@@ -154,17 +161,62 @@ header .hero .hero_content a:hover{
     font-size: 2rem;
     margin: 0;
     padding: 0;
+    margin-top: 1rem;
 }
 
-.cards_services-card-1{
+.cards_services-card{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(200, 200, 200,1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(200, 200, 200,1);
+    box-shadow: 0px 0px 5px 2px rgba(200, 200, 200,1);
+}
+
+.card_services-img{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+.card_services-img img{
+    width: 120%;
+    -webkit-clip-path: circle(30% at 0 50%);
+    clip-path: circle(80% at 5% -10%);
+}
+
+.card_services-img::after{
+    content: url(./assets/isologo.png);
+    position: absolute;
+    top: 10%;
+    right: 3%;
+}
+
+.cards_services-card img{
+    width: 100%;
+    object-fit: scale-down;
+    box-sizing: border-box;
+}
+
+.card_services-title{
+    font-size: 1.3rem;
+    color: #a0151b;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+
+.cards_services-card .c1{
     grid-area: card-1;
     text-align: center;
 }
-.cards_services-card-2{
+.cards_services-card .c2{
     grid-area: card-2;
     text-align: center;
 }
-.cards_services-card-3{
+.cards_services-card .c3{
     grid-area: card-3;
     text-align: center;
 }
