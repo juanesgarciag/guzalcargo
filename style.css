@@ -369,7 +369,7 @@ header .hero .hero_content a:hover{
 .form{
     background: #fff;
     height: 60vh;
-    width: 35%;
+    width: 30%;
     border-radius: 5px;
     margin-left: 8rem;
     padding: 1rem;
@@ -377,7 +377,8 @@ header .hero .hero_content a:hover{
 
 .form_name-mail, .form_phone_city{
     display: flex;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
+    justify-content: space-between;
 }
 
 .form_name-mail .form_text{
@@ -386,6 +387,51 @@ header .hero .hero_content a:hover{
 
 .form_phone_city .form_phone{
     padding-right: 1rem ;
+}
+
+.label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-bottom: 0.1rem;
+}
+
+.input input{
+    outline: none;
+    border: 0;
+    padding: 8px 0;
+    border-radius: 2px;
+    background: transparent;
+}
+
+.input{
+    background: #f2f2f2;
+    border: 1px solid #c1c1c1;
+    border-radius: 2px;
+}
+
+.coments{
+    padding: 0 0 40px 0;
+    margin-bottom: 20px;
+}
+
+.button_form{
+    border: 1px solid #a0151b;
+    color: #fff;
+    background: #a0151b;
+    padding: 10px 60px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.buttom_form input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
  /* FOOTER */
