@@ -147,6 +147,8 @@ header .hero .hero_content a:hover{
     margin: 0 auto;
 }
 
+/* SERVICIOS */
+
 .wrapper_cards{
     padding: 10px;
     display: grid;
@@ -229,6 +231,64 @@ header .hero .hero_content a:hover{
     grid-area: card-3;
     text-align: center;
 }
+
+/* BENEFICIOS */
+
+.wrap_benefits{
+    display: grid;
+    grid-template-areas: '. benefits_img .'
+                        'benefits_benefit1 . benefits_benefit3'
+                        'benefits_benefit2 benefits_img2 benefits_img2';
+    grid-template-columns: 360px 240px 360px;
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 4rem;
+    justify-content: center;
+}
+
+.benefits_img{
+    grid-area: benefits_img;
+    width: 200px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.benefits_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.benefits_benefit1{
+    grid-area: benefits_benefit1;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+}
+
+.benefits_benefit2{
+    grid-area: benefits_benefit2;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+}
+
+.benefits_benefit3{
+    grid-area: benefits_benefit3;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+}
+
+.benefits_img2{
+    grid-area: benefits_img2;
+    text-align: right;
+}
+
+.benef_title span{
+    color: #a0151b;
+    font-size: 1.5rem;
+}
+
+/* COMENTARIOS */
 
 .wrapper_coments{
     display: flex;
