@@ -372,7 +372,25 @@ header .hero .hero_content a:hover{
     width: 30%;
     border-radius: 5px;
     margin-left: 8rem;
-    padding: 1rem;
+    padding: 2rem;
+}
+
+.form_title{
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.form_title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    background: #a0151b;
+    height: 3px;
+    border-radius: 10px;
 }
 
 .form_name-mail, .form_phone_city{
@@ -426,8 +444,8 @@ header .hero .hero_content a:hover{
     transition: 0.5s;
 }
 
-.buttom_form input{
-    background: transparent;
+.input_send{
+    background: transparent !important;
     border: 0;
     color: #fff;
     font-size: 1rem;
