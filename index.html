@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./owlcarousel/owl.carousel.css" />
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Guzalcargo</title>
 </head>
 <body>
 
@@ -28,12 +32,32 @@
                 </div>
             </div>
         </nav>
-        <div class="hero">
-            <div class="hero_content">
-                <h1>Expertos en envíos </br> internacionales</h1>
-                <p>Operadora de servicios logísticos globales, casilleros </br> internacioneales y otros servicios</p>
-                <a href="#">Conocer más</a>
+        <div class="swiper-container hero">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: url('./assets/carga.png');">
+                    <div class="hero_content">
+                        <h1>Expertos en envíos </br> internacionales</h1>
+                        <p>Operadora de servicios logísticos globales, casilleros </br> internacioneales y otros servicios</p>
+                        <a href="#">Conocer más</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url('https://www.larevista.com.mx/assets/noticias/noticia44656/1500_514fde9cad0adb6e5cb24a85b0bad6e5.jpeg');">
+                    <div class="hero_content">
+                        <h1>Expertos en envíos </br> internacionales</h1>
+                        <p>Operadora de servicios logísticos globales, casilleros </br> internacioneales y otros servicios</p>
+                        <a href="#">Conocer más</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url('https://static-abcblogs.abc.es/wp-content/uploads/sites/86/2020/07/MSC_Oscar.jpg');">
+                    <div class="hero_content">
+                        <h1>Expertos en envíos </br> internacionales</h1>
+                        <p>Operadora de servicios logísticos globales, casilleros </br> internacioneales y otros servicios</p>
+                        <a href="#">Conocer más</a>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </header>
 
@@ -194,5 +218,53 @@
         </div>
     </footer>
     <small class="copyright"><a href="#">Diseñado por E-Support &nbsp;</a> para Guzalcargo | Copyright &nbsp; <i class="fa fa-copyright color-awesome"></i> &nbsp; Guzalcargo 2020</small>
+
+
+    <!-- <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.js"></script> -->
+    <!-- <script src="./owlcarousel/owl_app.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+
+            // If we need pagination
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            breakpoints: {
+                640: {
+                slidesPerView: 1,
+                },
+                768: {
+                slidesPerView: 1,
+                },
+                1024: {
+                slidesPerView: 1,
+                },
+            }
+        });
+    </script>
 </body>
 </html>
