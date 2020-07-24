@@ -166,7 +166,7 @@ header .hero .hero_content a:hover{
 }
 
 .container{
-    width: 1100px;
+    width: 1024px;
     margin: 0 auto;
 }
 
@@ -344,7 +344,7 @@ header .hero .hero_content a:hover{
 }
 
 .coment{
-    max-width: 300px;
+    max-width: 260px;
     text-align: center;
     padding-right: 50px;
 }
@@ -394,9 +394,8 @@ header .hero .hero_content a:hover{
 .form{
     background: #fff;
     height: 60vh;
-    width: 30%;
+    width: 40%;
     border-radius: 5px;
-    margin-left: 8rem;
     padding: 2rem;
 }
 
@@ -585,4 +584,68 @@ header .hero .hero_content a:hover{
 .copyright a:hover{
     font-weight: bold;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px){
+
+    /* NAV */
+    header nav{
+        padding: 10px 50px 10px;
+    }
+
+    header nav .nav_menu .nav_menu-buttons a:nth-child(1){
+        padding: 5px 35px;
+    }
+
+    header nav .nav_menu .nav_menu-buttons a:nth-child(2){
+        padding: 5px 35px;
+    }
+
+    /* FORMULARIO */
+    .form{
+        background: #fff;
+        height: 65vh;
+        width: 35%;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-left: 50px;
+    }
+
+    .form_text{
+        margin-top: 0px;
+    }
+
+    .form_mail{
+        margin-top: 0px;
+    }
+
+    .form_phone{
+        margin-top: 0px;
+    }
+
+    .form_city{
+        margin-top: 0px;
+    }
+
+    .form_coments{
+        margin-top: 0px;
+    }
+
+    .button_form{
+        margin-top: 0px;
+    }
+
+    .form_title{
+        margin-bottom: 5px;
+    }
+
+    .coments{
+        padding: 0 0 40px 0;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        justify-content: space-around;
+    }
 }

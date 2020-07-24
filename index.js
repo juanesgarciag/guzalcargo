@@ -2,7 +2,6 @@ var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
         delay: 4500,
