@@ -264,7 +264,7 @@ header .hero_content a:hover{
     grid-template-areas: '. benefits_img .'
                         'benefits_benefit1 . benefits_benefit3'
                         'benefits_benefit2 benefits_img2 benefits_img2';
-    grid-template-columns: 360px 240px 360px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     margin-bottom: 4rem;
     justify-content: center;
@@ -286,26 +286,27 @@ header .hero_content a:hover{
     grid-area: benefits_benefit1;
     font-weight: 400;
     font-size: 1.3rem;
-    padding-left: 3rem;
+    padding-left: 5rem;
 }
 
 .benefits_benefit2{
     grid-area: benefits_benefit2;
     font-weight: 400;
     font-size: 1.3rem;
-    padding-left: 3rem;
+    padding-left: 5rem;
 }
 
 .benefits_benefit3{
     grid-area: benefits_benefit3;
     font-weight: 400;
     font-size: 1.3rem;
-    padding-left: 2rem;
+    padding-right: 3rem;
 }
 
 .benefits_img2{
     grid-area: benefits_img2;
     text-align: right;
+    padding-right: 3rem;
 }
 
 .benef_title span{
@@ -650,6 +651,94 @@ header .hero_content a:hover{
     }
 }
 
-@media screen and (max-width: 102px){
+@media screen and (max-width: 768px){
 
+    .container{
+        width: 760px;
+        margin: 0 auto;
+    }
+
+    /* NAV */
+    header nav{
+        padding: 10px 10px 10px;
+    }
+
+    header nav .nav_menu ul li{
+        padding: 0 5px;
+    }
+
+    header nav .nav_menu .nav_menu-buttons a:nth-child(1){
+        padding: 5px 25px;
+        font-size: 0.7rem;
+    }
+
+    header nav .nav_menu .nav_menu-buttons a:nth-child(2){
+        padding: 5px 25px;
+        font-size: 0.7rem;
+    }
+
+    header nav .nav_menu ul li a{
+        font-size: 0.7rem;
+    }
+
+    /* BENEFICIOS */
+    .wrap_benefits{
+        display: grid;
+        grid-template-areas: '. benefits_img .'
+                            'benefits_benefit1 benefits_benefit2 benefits_benefit3'
+                            'benefits_img2 benefits_img2 benefits_img2';
+    }
+
+    .benefits_benefit1{
+        font-size: 1rem;
+        padding-left: 0;
+        padding: 5px;
+    }
+
+    .benefits_benefit2{
+        font-size: 1rem;
+        padding-left: 0;
+        padding: 5px;
+    }
+
+    .benefits_benefit3{
+        font-size: 1rem;
+        padding-right: 0;
+        padding: 5px;
+    }
+
+    .benefits_img2{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    /* OPINIONES */
+    .coment{
+        max-width: 200px;
+        padding-right: 10px;
+    }
+
+    /* FORMULARIO */
+    .form{
+        width: 45%;
+    }
+
+    /* FOOTER */
+    .footer_logo img{
+        width: 80%;
+        height: 80%;
+        margin-top: 10px;
+    }
+
+    .footer_info{
+        margin-left: 0;
+    }
+
+    .footer_info p a{
+        font-size: 0.9rem;
+    }
+
+    .footer_redes{
+        margin-top: 10px;
+    }
 }
