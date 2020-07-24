@@ -97,13 +97,13 @@ header nav .nav_menu .nav_menu-buttons a:nth-child(2):hover{
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
-.hero{
+.swiper-container{
     height: 80vh;
     width: 100%;
 }
 
 .swiper-wrapper{
-    width: 100%;
+    width: 100% ;
     height: 100%;
 }
 
@@ -129,19 +129,19 @@ header nav .nav_menu .nav_menu-buttons a:nth-child(2):hover{
     background: rgba(0,0,0,0.4);
 }
 
-header .hero .hero_content h1{
+header .hero_content h1{
     margin: 0;
     font-size: 2.5rem;
     color: #fff;
     font-weight: 700;
 }
 
-header .hero .hero_content p{
+header .hero_content p{
     color: #fff;
     padding-bottom: 30px;
 }
 
-header .hero .hero_content a{
+header .hero_content a{
     border: 1px solid #a0151b;
     color: #fff;
     background: #a0151b;
@@ -153,7 +153,7 @@ header .hero .hero_content a{
     transition: 0.5s;
 }
 
-header .hero .hero_content a:hover{
+header .hero_content a:hover{
     text-decoration: underline #fff;
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
 }
@@ -648,4 +648,8 @@ header .hero .hero_content a:hover{
     .footer{
         justify-content: space-around;
     }
+}
+
+@media screen and (max-width: 102px){
+
 }
