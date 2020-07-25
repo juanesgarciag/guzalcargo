@@ -5,7 +5,7 @@ var mySwiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     autoplay: {
         delay: 4500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
     },
 
     // If we need pagination

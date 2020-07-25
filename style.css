@@ -99,7 +99,7 @@ header nav .nav_menu .nav_menu-buttons a:nth-child(2):hover{
 
 .swiper-container{
     height: 80vh;
-    max-width:98vw;
+    max-width:100vw !important;
 }
 
 .swiper-wrapper{
@@ -108,7 +108,7 @@ header nav .nav_menu .nav_menu-buttons a:nth-child(2):hover{
 }
 
 .swiper-slide{
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     background-repeat: no-repeat ;
     background-size: cover !important;
@@ -117,6 +117,10 @@ header nav .nav_menu .nav_menu-buttons a:nth-child(2):hover{
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+.swiper-slide-active{
+    width: 100% !important;
 }
 
 .hero_content{
@@ -679,6 +683,19 @@ header .hero_content a:hover{
 
     header nav .nav_menu ul li a{
         font-size: 0.7rem;
+    }
+
+    /* HERO */
+    header .hero_content h1{
+        font-size: 1.5rem;
+    }
+
+    header .hero_content p{
+        font-size: 0.9rem;
+    }
+
+    header .hero_content a{
+        font-size: 0.8rem;
     }
 
     /* BENEFICIOS */
