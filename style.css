@@ -99,7 +99,7 @@ header nav .nav_menu .nav_menu-buttons a:nth-child(2):hover{
 
 .swiper-container{
     height: 80vh;
-    width: 100%;
+    max-width:98vw;
 }
 
 .swiper-wrapper{
@@ -740,5 +740,31 @@ header .hero_content a:hover{
 
     .footer_redes{
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .container{
+        width: 420px;
+        margin: 0 auto;
+    }
+
+    /* SERVICIOS */
+    .wrapper_cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(100px, auto);
+        grid-template-areas: 'title'
+                            'card-1'
+                            'card-2'
+                            'card-3';
+    }
+
+    /* BENEFICIOS */
+    .wrap_benefits{
+        display: grid;
+        grid-template-areas: '. benefits_img .'
+                            'benefits_benefit1 benefits_benefit2 benefits_benefit3'
+                            'benefits_img2 benefits_img2 benefits_img2';
     }
 }
