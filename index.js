@@ -24,6 +24,9 @@ var mySwiper = new Swiper('.swiper-container', {
     //     el: '.swiper-scrollbar',
     // },
     breakpoints: {
+        500: {
+        slidesPerView: 1,
+        },
         640: {
         slidesPerView: 1,
         },

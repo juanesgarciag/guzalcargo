@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./owlcarousel/owl.carousel.css" />
-    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.css" /> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -14,8 +12,9 @@
 <body>
 
     <!-- NAV Y HERO -->
+    <i class="fa fa-bars burger-button" id="burger-menu"></i>
     <header>
-        <nav>
+        <nav class="nav">
             <div class="nav_logo">
                 <img src="./assets/logo.png" alt="">
             </div>
@@ -25,6 +24,8 @@
                     <li><a href="#">Portafolio</a></li>
                     <li><a href="#">Guzal</a></li>
                     <li><a href="#">Contáctenos</a></li>
+                    <li class="log"><a href="#">Ingresar</a></li>
+                    <li class="log"><a href="#">Crear cuenta</a></li>
                 </ul>
                 <div class="nav_menu-buttons">
                     <a href="">Ingresar</a>
@@ -215,16 +216,18 @@
             </div>
         </div>
         <div class="footer_redes">
-            <a href="#"><i class="fa fa-facebook-square color-awesome"></i></a>
-            <a href="#"><i class="fa fa-instagram color-awesome"></i></a></i>
+            <a href="#"><i class="fa fa-facebook-square color-awesome redes"></i></a>
+            <a href="#"><i class="fa fa-instagram color-awesome redes"></i></a></i>
         </div>
     </footer>
     <small class="copyright"><a href="#">Diseñado por E-Support &nbsp;</a> para Guzalcargo | Copyright &nbsp; <i class="fa fa-copyright color-awesome"></i> &nbsp; Guzalcargo 2020</small>
 
 
+    <script src="http//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="./index.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html>
