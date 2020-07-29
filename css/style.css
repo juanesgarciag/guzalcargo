@@ -1,3 +1,5 @@
+@import url('./about.css');
+
 @font-face{
     font-family: 'helvetica-neue';
     src: url('./fonts/helvetica-neue.ttf') format('ttf');
@@ -11,6 +13,7 @@ body{
     margin: 0;
     padding: 0;
     color: #1d1d1d;
+    background: #fff;
     font-family: 'helvetica-neue', sans-serif;
 }
 
@@ -25,6 +28,9 @@ body{
     top: 0;
     z-index: 10;
     background: #fff;
+    -webkit-box-shadow: 0px 4px 5px -2px rgba(148,143,148,1);
+    -moz-box-shadow: 0px 4px 5px -2px rgba(148,143,148,1);
+    box-shadow: 0px 4px 5px -2px rgba(148,143,148,1);
 }
 
 .burger-button{
@@ -413,7 +419,7 @@ header .hero_content a:hover{
 /* FORM */
 
 .contact{
-    background: url('./assets/carga1.png');
+    background: url('../assets/carga1.png');
     height: auto;
     width: 100%;
     background-repeat: no-repeat;
@@ -551,10 +557,16 @@ header .hero_content a:hover{
  /* FOOTER */
 
 .footer{
+    width: 100%;
+    border-top: 1px solid #a0151b;
+}
+
+.footer_container{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-top: 10px;
 }
 
 .footer_logo-info{
