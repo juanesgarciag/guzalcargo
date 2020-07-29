@@ -1,4 +1,5 @@
 @import url('./about.css');
+@import url('./porfolio.css');
 
 @font-face{
     font-family: 'helvetica-neue';
@@ -214,7 +215,7 @@ header .hero_content a:hover{
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(100px, auto);
+    grid-template-rows: minmax(50px, auto);
     grid-template-areas: 'title title title'
                         'card-1 card-2 card-3';
     grid-gap: 15px;
@@ -229,6 +230,7 @@ header .hero_content a:hover{
     margin: 0;
     padding: 0;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .cards_services-card{
@@ -896,7 +898,7 @@ header .hero_content a:hover{
     /* SERVICIOS */
     .wrapper_cards{
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(100px, auto);
+        grid-template-rows: minmax(50px, auto);
         grid-template-areas: 'title'
                             'card-1'
                             'card-2'
@@ -969,7 +971,7 @@ header .hero_content a:hover{
 
     /* FORMULARIO */
     .contact{
-        background: url('./assets/carga1.png');
+        background: url('../assets/carga1.png');
         height: auto;
         width: 100%;
         padding: 20px 0;
@@ -1003,7 +1005,7 @@ header .hero_content a:hover{
     }
 
     /* FOOTER */
-    .footer{
+    .footer_container{
         display: block;
     }
 

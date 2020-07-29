@@ -72,3 +72,68 @@
 .about_img2 img{
     width: 55%;
 }
+
+@media screen and (max-width: 768px){
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'about1'
+                            'about_img1'
+                            'about_img2'
+                            'about2';
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .about1{
+        padding-right: 0;
+    }
+
+    .about1 h2{
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    .about1 h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .about_img1{
+        padding-right: 0;
+    }
+
+    .about2 h3{
+        padding: 20px;
+        font-size: 2rem;
+    }
+
+    .about_img2 img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .about1{
+        padding: 10px;
+    }
+
+    .about1 h2{
+        margin-top: 0;
+    }
+
+    .about2{
+        padding: 0 10px;
+    }
+
+    .about2 h3{
+        font-size: 1.5rem;
+    }
+
+    .about2 p{
+        padding: 10px;
+    }
+}

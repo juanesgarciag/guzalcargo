@@ -1,0 +1,15 @@
+.portfolio h3{
+    color: #a0151b;
+    position: relative;
+}
+
+.portfolio h3::after{
+    content: '';
+    position: absolute;
+    left: 0 auto;
+    bottom: 0;
+    width: 20%;
+    background: #a0151b;
+    height: 2px;
+    border-radius: 10px;
+}
