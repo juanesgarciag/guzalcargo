@@ -435,7 +435,7 @@ header .hero_content a:hover{
     /* PORTFOLIO */
     .catalog_detail{
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 0.5fr 1fr;
         grid-template-areas: 'img'
                             'detail';
         justify-content: center;
@@ -443,6 +443,11 @@ header .hero_content a:hover{
 
     .catalog_detail-detail h3{
         margin-bottom: 5px;
+    }
+
+    .catalog_detail-img{
+        width: 100%;
+        height: 150px;
     }
 }
 
