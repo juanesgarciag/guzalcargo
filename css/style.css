@@ -1,5 +1,10 @@
 @import url('./about.css');
 @import url('./porfolio.css');
+@import url('./services.css');
+@import url('./benefits.css');
+@import url('./coments.css');
+@import url('./form.css');
+@import url('./footer.css');
 
 @font-face{
     font-family: 'helvetica-neue';
@@ -127,9 +132,6 @@ header nav .nav_menu .nav_menu-buttons a:nth-child(2):hover{
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
-/* MENU HAMBRUGUESA */
-
-
 .swiper-container{
     height: 80vh;
     width:100% !important;
@@ -209,432 +211,6 @@ header .hero_content a:hover{
     margin: 0 auto;
 }
 
-/* SERVICIOS */
-
-.wrapper_cards{
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(50px, auto);
-    grid-template-areas: 'title title title'
-                        'card-1 card-2 card-3';
-    grid-gap: 15px;
-    margin-bottom: 3rem;
-}
-
-.wrapper_cards-title{
-    grid-area: title;
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.cards_services-card{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 2px rgba(200, 200, 200,1);
-}
-
-.card_services-img{
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 10px;
-    z-index: 5;
-}
-
-.card_img-shadow{
-    -webkit-filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-            filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-}
-
-.card_services-img img{
-    width: 120%;
-    border-radius: 10px;
-    -webkit-clip-path: circle(30% at 0 50%);
-    clip-path: circle(75% at 5% -10%);
-    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
-}
-
-.card_services-img::after{
-    content: url(./assets/isologo.png);
-    position: absolute;
-    top: 10%;
-    right: 3%;
-}
-
-.cards_services-card img{
-    width: 100%;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
-    box-sizing: border-box;
-}
-
-.card_services-title{
-    font-size: 1.3rem;
-    color: #a0151b;
-    margin-top: 0;
-    font-weight: 700;
-}
-
-
-.cards_services-card .c1{
-    grid-area: card-1;
-    text-align: center;
-}
-.cards_services-card .c2{
-    grid-area: card-2;
-    text-align: center;
-}
-.cards_services-card .c3{
-    grid-area: card-3;
-    text-align: center;
-}
-
-/* BENEFICIOS */
-
-.wrap_benefits{
-    display: grid;
-    grid-template-areas: '. benefits_img .'
-                        'benefits_benefit1 . benefits_benefit3'
-                        'benefits_benefit2 benefits_img2 benefits_img2';
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    margin-bottom: 4rem;
-    justify-content: center;
-}
-
-.benefits_img{
-    grid-area: benefits_img;
-    width: 200px;
-    height: 160px;
-    margin: 0 auto;
-}
-
-.benefits_img img{
-    width: 100%;
-    height: 100%;
-}
-
-.benefits_benefit1{
-    grid-area: benefits_benefit1;
-    font-weight: 400;
-    font-size: 1.3rem;
-    padding-left: 5rem;
-}
-
-.benefits_benefit2{
-    grid-area: benefits_benefit2;
-    font-weight: 400;
-    font-size: 1.3rem;
-    padding-left: 5rem;
-}
-
-.benefits_benefit3{
-    grid-area: benefits_benefit3;
-    font-weight: 400;
-    font-size: 1.3rem;
-    padding-right: 3rem;
-}
-
-.benefits_img2{
-    grid-area: benefits_img2;
-    text-align: right;
-    padding-right: 3rem;
-}
-
-.benef_title span{
-    color: #a0151b;
-    font-size: 1.5rem;
-}
-
-/* COMENTARIOS */
-
-.wrapper_coments{
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    flex-wrap: wrap;
-}
-
-.wrapper_coments-title{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 15px;
-}
-
-.wrapper_coments-title:after{
-    content: '';
-    position: absolute;
-    left: 0 auto;
-    bottom: 0;
-    width: 10%;
-    background: #a0151b;
-    height: 5px;
-    border-radius: 10px;
-}
-
-.coment{
-    max-width: 260px;
-    text-align: center;
-    padding-right: 50px;
-}
-
-.coment_wrap-img{
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    border: 2px solid #a5a5a5;
-    border-radius: 50%;
-}
-
-.coment_wrap-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 150px;
-}
-
-.coment_nombre{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 5px;
-}
-
-.coment-description{
-    margin: 5px;
-}
-
-.color-awesome{
-    color: #a0151b;
-}
-
-/* FORM */
-
-.contact{
-    background: url('../assets/carga1.png');
-    height: auto;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 4rem;
-    padding: 20px 0;
-}
-
-.form{
-    background: #fff;
-    height: auto;
-    width: 40%;
-    border-radius: 5px;
-    padding: 2rem;
-}
-
-.form_title{
-    position: relative;
-    padding-bottom: 5px;
-    font-size: 2rem;
-    margin-top: 0;
-}
-
-.form_title::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 20%;
-    background: #a0151b;
-    height: 3px;
-    border-radius: 10px;
-}
-
-.form-wrap{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: (6, 1fr);
-    grid-template-areas: '.  .'
-                        'nombre email'
-                        'telefono ciudad'
-                        'coment coment'
-                        'button .'
-                        '.  .';
-    justify-content: center;
-    align-items: flex-start;
-    grid-row-gap: 5px;
-}
-
-.form_text{
-    grid-area: nombre;
-    margin-top: 5px;
-    padding-right: 1rem ;
-}
-
-.form_mail{
-    grid-area: email;
-    margin-top: 5px;
-}
-
-.form_phone{
-    grid-area: telefono;
-    margin-top: 5px;
-    padding-right: 1rem ;
-}
-
-.form_city{
-    grid-area: ciudad;
-    margin-top: 5px;
-}
-
-.form_coments{
-    grid-area: coment;
-    margin-top: 5px;
-}
-
-.button_form{
-    grid-area: button;
-    margin-top: 5px;
-}
-
-.label{
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding-bottom: 0.1rem;
-}
-
-.input input{
-    outline: none;
-    border: 0;
-    padding: 8px 10px;
-    border-radius: 2px;
-    background: transparent;
-}
-
-.input{
-    background: #f2f2f2;
-    border: 1px solid #c1c1c1;
-    border-radius: 2px;
-}
-
-.coments{
-    padding: 0 0 60px 0;
-    margin-bottom: 5px;
-}
-
-.button_form{
-    margin-top: 5px;
-    grid-area: button;
-    border: 1px solid #a0151b;
-    color: #fff;
-    background: #a0151b;
-    padding: 10px 60px;
-    border-radius: 5px;
-    cursor: pointer;
-
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.8);
-    transition: 0.5s;
-}
-
-.input_send{
-    background: transparent !important;
-    border: 0;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
- /* FOOTER */
-
-.footer{
-    width: 100%;
-    border-top: 1px solid #a0151b;
-}
-
-.footer_container{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-}
-
-.footer_logo-info{
-    display: flex;
-}
-
-
-.footer_logo{
-    width: 180px;
-    height: 140px;
-}
-
-.footer_logo img{
-    width: 100%;
-    height: 100%;
-}
-
-.footer_info{
-    margin-left: 30px;
-}
-
-.footer_info p{
-    padding-bottom: 5px;
-}
-
-.footer_info p a{
-    text-decoration: none;
-    color: #2f2e41;
-    font-weight: 600;
-}
-
-.footer_info p a i{
-    padding-right: 10px;
-}
-
-.fa-envelope,
-.fa-phone,
-.fa-map-marker{
-    font-size: 1.3rem;
-}
-
-.fa-facebook-square,
-.fa-instagram{
-    font-size: 2.5rem;
-}
-
-.copyright{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-    color: #2f2e41;
-}
-
-.copyright a{
-    text-decoration: none;
-    color: #1d1d1d;
-    cursor: pointer;
-    /* font-weight: 600; */
-    translate: 0.5s;
-}
-
-.copyright a:hover{
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 @media screen and (max-width: 1024px){
 
     .container{
@@ -700,6 +276,11 @@ header .hero_content a:hover{
 
     .footer{
         justify-content: space-around;
+    }
+
+    /* PORTFOLIO */
+    .catalog_detail-detail a{
+        width: 35%
     }
 }
 
@@ -769,28 +350,6 @@ header .hero_content a:hover{
     .nav_menu-buttons{
         display: none;
     }
-
-    /* header nav{
-        padding: 10px 10px 10px;
-    }
-
-    header nav .nav_menu ul li{
-        padding: 0 5px;
-    }
-
-    header nav .nav_menu .nav_menu-buttons a:nth-child(1){
-        padding: 5px 25px;
-        font-size: 0.7rem;
-    }
-
-    header nav .nav_menu .nav_menu-buttons a:nth-child(2){
-        padding: 5px 25px;
-        font-size: 0.7rem;
-    }
-
-    header nav .nav_menu ul li a{
-        font-size: 0.7rem;
-    } */
 
     /* HERO */
     header .hero_content h1{
@@ -871,6 +430,19 @@ header .hero_content a:hover{
 
     .footer_redes{
         margin-top: 10px;
+    }
+
+    /* PORTFOLIO */
+    .catalog_detail{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 'img'
+                            'detail';
+        justify-content: center;
+    }
+
+    .catalog_detail-detail h3{
+        margin-bottom: 5px;
     }
 }
 
@@ -1036,5 +608,38 @@ header .hero_content a:hover{
         display: inline-block;
         text-align: center;
         padding: 5px;
+    }
+
+    /* PORTFOLIO */
+    .catalog{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'catalog_list'
+                            'catalog_detail';
+    }
+
+    .catalog_list{
+        height: fit-content;
+    }
+
+    .catalog_list li ul{
+        text-align: center;
+    }
+
+    .catalog_detail-detail{
+        text-align: center;
+    }
+
+    .catalog_detail-detail a{
+        width: 28%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .catalog_detail-detail a{
+        width: 40%;
     }
 }

@@ -1,0 +1,137 @@
+/* FORM */
+
+.contact{
+    background: url('../assets/carga1.png');
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 20px 0;
+}
+
+.form{
+    background: #fff;
+    height: auto;
+    width: 40%;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.form_title{
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.form_title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    background: #a0151b;
+    height: 3px;
+    border-radius: 10px;
+}
+
+.form-wrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: (6, 1fr);
+    grid-template-areas: '.  .'
+                        'nombre email'
+                        'telefono ciudad'
+                        'coment coment'
+                        'button .'
+                        '.  .';
+    justify-content: center;
+    align-items: flex-start;
+    grid-row-gap: 5px;
+}
+
+.form_text{
+    grid-area: nombre;
+    margin-top: 5px;
+    padding-right: 1rem ;
+}
+
+.form_mail{
+    grid-area: email;
+    margin-top: 5px;
+}
+
+.form_phone{
+    grid-area: telefono;
+    margin-top: 5px;
+    padding-right: 1rem ;
+}
+
+.form_city{
+    grid-area: ciudad;
+    margin-top: 5px;
+}
+
+.form_coments{
+    grid-area: coment;
+    margin-top: 5px;
+}
+
+.button_form{
+    grid-area: button;
+    margin-top: 5px;
+}
+
+.label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-bottom: 0.1rem;
+}
+
+.input input{
+    outline: none;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 2px;
+    background: transparent;
+}
+
+.input{
+    background: #f2f2f2;
+    border: 1px solid #c1c1c1;
+    border-radius: 2px;
+}
+
+.coments{
+    padding: 0 0 60px 0;
+    margin-bottom: 5px;
+}
+
+.button_form{
+    margin-top: 5px;
+    grid-area: button;
+    border: 1px solid #a0151b;
+    color: #fff;
+    background: #a0151b;
+    padding: 10px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.input_send{
+    background: transparent !important;
+    border: 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
