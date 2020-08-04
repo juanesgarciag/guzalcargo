@@ -64,8 +64,13 @@
     transition: 0.5s;
 }
 
+.catalog_list ul:nth-child(1) a{
+    color: #a0151b;
+}
+
 .catalog_list ul:hover a{
     color: #a0151b;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -79,7 +84,8 @@
 .catalog_detail-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+        object-fit: cover;
 }
 
 .catalog_detail-detail{

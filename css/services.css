@@ -61,7 +61,7 @@
 .cards_services-card img{
     width: 100%;
     -o-object-fit: scale-down;
-       object-fit: scale-down;
+        object-fit: scale-down;
     box-sizing: border-box;
 }
 

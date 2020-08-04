@@ -159,7 +159,7 @@
                             <label for="nombre">Nombre</label>
                         </div>
                         <div class="input">
-                            <input type="text" name="" id="nombre" placeholder="Nombre/Empresa">
+                            <input type="text" name="" id="nombre" placeholder="Nombre/Empresa" title="El nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                         </div>
                     </div>
                     <div class="form_mail">
@@ -167,7 +167,7 @@
                             <label for="email">Correo electrónico</label>
                         </div>
                         <div class="input">
-                            <input type="email" id="email" placeholder="ejemplo@gmail.com">
+                            <input type="email" id="email" placeholder="ejemplo@gmail.com" title="Debes ingresar un correo valido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                         </div>
                     </div>
                     <div class="form_phone">
