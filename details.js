@@ -1,3 +1,6 @@
+
+
+
 function det1() {
     document.querySelector('#det1').style.visibility='visible';
     document.querySelector('#det2').style.visibility='hidden';
