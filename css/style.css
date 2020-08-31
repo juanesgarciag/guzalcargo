@@ -3,6 +3,7 @@
 @import url('./services.css');
 @import url('./benefits.css');
 @import url('./coments.css');
+@import url('./map.css');
 @import url('./form.css');
 @import url('./footer.css');
 
@@ -361,6 +362,10 @@ header .hero_content a:hover{
     header .hero_content a{
         font-size: 0.8rem;
     }
+
+    .swiper-container{
+        height: 60vh;
+        width:100% !important;
 
     /* BENEFICIOS */
     .wrap_benefits{
